@@ -15,22 +15,12 @@ import javax.swing.JPanel;
 
 import BlackJackBase.PCard;
 
-/**
- * A simple playing card test. This test displays the given card in a window
- * using Swing. The only method that needs to be called is <b>run</b>. The
- * remaining methods and variables can be ignored.
- * 
- * @author Jared N. Plumb
- * @version 1.2
- * @since 2018-06-12
- * @Minor modifications by Jeff Light
- * @since 2019-11-01
- */
+
 public final class CardTest extends JPanel {
 
 	/**
 	 * Display a playing card in a window.
-	 * 
+	 *
 	 * @param card
 	 *            The card to display.
 	 */
@@ -50,9 +40,9 @@ public final class CardTest extends JPanel {
 	}
 
 	// **********************************************************************
-	// Private Data
-	// (You do not need to know anything below this point!)
-	// **********************************************************************
+// Private Data
+// (You do not need to know anything below this point!)
+// **********************************************************************
 	private CardTest(PCard card) {
 		this.getFontMetrics(CARD_FONT); // This is a hack to fix a Java font bug
 		this.setPreferredSize(new Dimension(GAME_WIDTH, GAME_HEIGHT));
