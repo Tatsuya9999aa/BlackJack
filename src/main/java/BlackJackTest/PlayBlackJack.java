@@ -1,12 +1,21 @@
 package BlackJackTest;
 
+
 import BlackJack.BJCard;
+import BlackJack.BJDeck;
 import BlackJackBase.PCard;
+import BlackJackBase.PDeck;
 
 public class PlayBlackJack {
 
     public static void main(String[] args) {
 
+        PDeck deck = new BJDeck();
+
+        DeckTest.run(deck);
+
+
+/*
         PCard aceSpade = new BJCard(BJCard.ACE, BJCard.SPADE);
 
         CardTest.run(aceSpade);
@@ -30,10 +39,10 @@ public class PlayBlackJack {
         PCard kingClub = new BJCard(BJCard.KING, BJCard.CLUB);
 
         CardTest.run(kingClub);
+        */
 
 
+    }//end of main
 
-    }
-
-}
+}//end of PlayBlackJack
 
