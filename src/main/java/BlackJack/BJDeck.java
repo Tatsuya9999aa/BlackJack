@@ -94,7 +94,7 @@ public class BJDeck implements PDeck {
     }//end of shuffle()
 
     @Override
-    public void addCard(PCard card) {	/** Adds a card to the end of the deck. */
+    public void addCard(PCard card) { /** Adds a card to the end of the deck. */
 
         BJDeck.cards.add((BJCard) card);
 
@@ -105,8 +105,9 @@ public class BJDeck implements PDeck {
         /** Removes a card from the end of the deck. Returns Null if the deck is empty.*/
 
         if (!cards.isEmpty()) {
-//            return cards.removeLast();
-            return null;
+
+            return cards.removeLast();
+
         } else {
 
             return null;
@@ -116,10 +117,10 @@ public class BJDeck implements PDeck {
     }//end of dealCard()
 
     @Override
-    public PCard dealHiddenCard() {	/** Removes a card from the end of the deck and marks it as hidden. Returns Null if the deck is empty.*/
+    public PCard dealHiddenCard() { /** Removes a card from the end of the deck and marks it as hidden. Returns Null if the deck is empty.*/
 
         if (!cards.isEmpty()) {
-//
+//         TODO　あとでやる
 //
 //            PCard card = cards.removeLast();
 //            card.hideCard();
@@ -135,10 +136,10 @@ public class BJDeck implements PDeck {
     }//end of dealHiddenCard()
 
     @Override
-    public int cardCount() {	/** Returns the number of cards in the deck. */
+    public int cardCount() { /** Returns the number of cards in the deck. */
 
         return cards.size();
 
     }//end of cardCount()
 
-}//end of BJDeck class
+}
