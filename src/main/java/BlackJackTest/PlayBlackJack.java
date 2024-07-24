@@ -1,49 +1,30 @@
 package BlackJackTest;
 
-import BlackJack.BJDeck;
+import java.awt.Color;
 import BlackJack.BJHand;
+import BlackJack.BJDeck;
+import BlackJackBase.PGame;
 
 public class PlayBlackJack {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
 
-//  BJCard card0 = new BJCard(BJCard.ACE,BJCard.SPADE);
-//  BJCard card1 = new BJCard(BJCard.SIX,BJCard.HEART);
-//  BJCard card2= new BJCard(BJCard.JACK,BJCard.SPADE);
-//  BJCard card3 = new BJCard(BJCard.KNIGHT,BJCard.HEART);
-//  BJCard card4 = new BJCard(BJCard.QUEEN,BJCard.DIAMOND);
-//  BJCard card5 = new BJCard(BJCard.KING,BJCard.CLUB);
-//
-//
-//        // Pass the PCard object to the run() method
-//        CardTest.run(card0);
-//        CardTest.run(card1);
-//        CardTest.run(card2);
-//        CardTest.run(card3);
-//        CardTest.run(card4);
-//        CardTest.run(card5);
+        PGame.setBackgroundColor(new Color(0, 100, 0));
+        PGame.setBannerColor(new Color(105, 105, 105));
+        PGame.setBannerTextColor(new Color(255, 255, 0));
+        PGame.setStatusTextColor(new Color(255, 0, 0));
+        PGame.setButtonColor(new Color(0, 128, 128));
+        PGame.setButtonHighlightColor(new Color(0, 255, 255));
+        PGame.setButtonTextColor(new Color(0, 0, 0));
+        PGame.setFont("Serif");
 
         BJDeck deck = new BJDeck();
-        BJHand hand = new BJHand();
-//  DeckTest.run(deck);
-        HandTest.run(deck, hand);
+        BJHand dealer = new BJHand();
+        BJHand player = new BJHand();
 
-//  PGame.setBackgroundColor(Color.GREEN);
-//  PGame.setBannerColor(Color.DARK_GRAY);
-//  PGame.setBannerTextColor(Color.white);
-//  PGame.setStatusTextColor(Color.BLACK);
-//  PGame.setButtonColor(Color.LIGHT_GRAY);
-//  PGame.setButtonTextColor(Color.BLACK);
-//  PGame.setButtonHighlightColor(Color.orange);
-//  PGame.setFont("Helvetica");
-//  BJDeck deck = new BJDeck();
-//  BJHand dealer = new BJHand();
-//  BJHand player = new BJHand();
-//  PGame.run(deck, player, dealer);
-//
+
+        PGame.run(deck, dealer, player);
     }
-
-
 }
+
 
